@@ -1,0 +1,793 @@
+[
+  {
+    "id": "synthetic_long_method_basic_001",
+    "prompt": "Write a Python function to process customer orders that validates input, calculates totals, applies discounts, updates inventory, generates invoice, sends confirmation email, and logs the transaction.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Recommend"
+    ],
+    "domain": "Finance",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_basic_002",
+    "prompt": "Write a Python function for user registration that validates email format, checks password strength, verifies username availability, creates user record, sends welcome email, initializes user preferences, and logs registration event.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Analyze"
+    ],
+    "domain": "Healthcare",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_basic_003",
+    "prompt": "Write a Python function to handle file uploads that validates file type, checks file size, scans for viruses, generates unique filename, stores file, creates database record, and sends notification.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Report"
+    ],
+    "domain": "Scientific Computing",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_basic_004",
+    "prompt": "Write a Python function for report generation that queries database, filters records, performs calculations, formats data, generates charts, compiles PDF, and emails to recipients.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Measure"
+    ],
+    "domain": "General Software",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_basic_005",
+    "prompt": "Write a Python function to process payment that validates card details, checks account balance, applies fees, processes transaction, updates ledger, generates receipt, and sends confirmation.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Measure"
+    ],
+    "domain": "E-commerce",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_basic_006",
+    "prompt": "Write a Python function for inventory management that checks stock levels, calculates reorder points, generates purchase orders, updates supplier records, logs changes, and sends alerts.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Write"
+    ],
+    "domain": "Finance",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_basic_007",
+    "prompt": "Write a Python function to handle customer complaints that validates ticket, categorizes issue, assigns priority, routes to agent, sends acknowledgment, logs interaction, and updates CRM.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Recommend"
+    ],
+    "domain": "Healthcare",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_intermediate_001",
+    "prompt": "Write a comprehensive data ETL pipeline function that reads from multiple CSV sources, cleans and normalizes data, performs aggregations, handles missing values, validates against schema, transforms for target format, and exports to database.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Implement",
+      "Recommend"
+    ],
+    "domain": "Scientific Computing",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_intermediate_002",
+    "prompt": "Write a Python function for e-commerce checkout that handles cart validation, inventory reservation, shipping calculation, tax computation, payment processing, order creation, email notification, and analytics tracking.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Design",
+      "Compare"
+    ],
+    "domain": "General Software",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_intermediate_003",
+    "prompt": "Write a Python function for loan e-commerce processing that validates applicant info, pulls credit reports, calculates risk scores, determines rates, generates documents, submits for approval, and notifies applicant.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Analyze",
+      "Design"
+    ],
+    "domain": "E-commerce",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_intermediate_004",
+    "prompt": "Write a Python function for clinical trial data processing that validates patient records, checks eligibility, randomizes assignments, tracks adverse events, generates safety reports, and submits to regulatory database.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Recommend",
+      "Measure"
+    ],
+    "domain": "Finance",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_intermediate_005",
+    "prompt": "Write a Python function for scientific experiment logging that captures sensor readings, validates data ranges, applies calibration, stores measurements, generates visualizations, and exports to research database.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Measure",
+      "Implement"
+    ],
+    "domain": "Healthcare",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_intermediate_006",
+    "prompt": "Write a Python function for multi-tenant user provisioning that validates organization, creates accounts, assigns roles, configures permissions, initializes workspaces, sends invitations, and logs audit trail.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Design",
+      "Analyze"
+    ],
+    "domain": "Scientific Computing",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_intermediate_007",
+    "prompt": "Write a comprehensive data ETL pipeline function that reads from multiple CSV sources, cleans and normalizes data, performs aggregations, handles missing values, validates against schema, transforms for target format, and exports to database.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Implement",
+      "Measure"
+    ],
+    "domain": "General Software",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_advanced_001",
+    "prompt": "Design and implement a complete patient record processing online store as a single function that handles admission, diagnosis coding, treatment planning, insurance verification, billing calculation, appointment scheduling, prescription management, and discharge documentation.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "Implement",
+      "Compare",
+      "Measure"
+    ],
+    "domain": "E-commerce",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_advanced_002",
+    "prompt": "Write a comprehensive financial portfolio rebalancing function that analyzes current holdings, calculates target allocations, identifies trades needed, checks tax implications, validates against compliance rules, executes orders, updates records, and generates reports.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "Evaluate",
+      "Report",
+      "Analyze"
+    ],
+    "domain": "Finance",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_advanced_003",
+    "prompt": "Write an end-to-end machine learning pipeline function that loads data, performs feature engineering, trains multiple models, evaluates performance, selects best model, deploys to production, monitors predictions, and retrains on drift.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "Write",
+      "Compare",
+      "List"
+    ],
+    "domain": "Healthcare",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_advanced_004",
+    "prompt": "Write a comprehensive supply chain optimization function that forecasts demand, optimizes inventory levels, plans production schedules, coordinates logistics, manages supplier relationships, tracks shipments, and generates performance dashboards.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "Report",
+      "Write",
+      "Measure"
+    ],
+    "domain": "Scientific Computing",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_advanced_005",
+    "prompt": "Write a complete healthcare claims adjudication function that validates claim format, verifies member eligibility, checks provider credentials, applies coverage rules, calculates payments, handles appeals, generates EOBs, and updates financial records.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "List",
+      "Recommend",
+      "Implement"
+    ],
+    "domain": "General Software",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_method_advanced_006",
+    "prompt": "Write a comprehensive trading online store function that receives market data, calculates indicators, generates signals, manages risk, executes orders, handles partial fills, reconciles positions, and produces compliance reports.",
+    "code_smells": [
+      "Long Method"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "Compare",
+      "Recommend",
+      "List"
+    ],
+    "domain": "E-commerce",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_basic_001",
+    "prompt": "Write a Python function create_user(username, email, password, first_name, last_name, phone, address, city, state, zip_code, country, birth_date, gender) that creates a new user account.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "List"
+    ],
+    "domain": "Finance",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_basic_002",
+    "prompt": "Write a Python function send_email(recipient, sender, subject, body, cc, bcc, reply_to, priority, attachments, tracking_id, template_id) that sends formatted emails.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Design"
+    ],
+    "domain": "Healthcare",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_basic_003",
+    "prompt": "Write a Python function calculate_shipping(weight, length, width, height, origin_zip, dest_zip, carrier, service_type, insurance, signature_required, hazmat) that computes shipping cost.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Report"
+    ],
+    "domain": "Scientific Computing",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_basic_004",
+    "prompt": "Write a Python function create_invoice(customer_id, items, tax_rate, discount_code, payment_terms, due_date, currency, notes, template, recurring, auto_send) that generates invoices.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Analyze"
+    ],
+    "domain": "General Software",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_basic_005",
+    "prompt": "Write a Python function search_products(query, category, min_price, max_price, brand, color, size, rating, in_stock, sort_by, page, per_page) that searches product catalog.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Evaluate"
+    ],
+    "domain": "E-commerce",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_basic_006",
+    "prompt": "Write a Python function create_appointment(patient_id, provider_id, date, time, duration, type, location, notes, reminder, insurance_id, copay) that schedules appointments.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Implement"
+    ],
+    "domain": "Finance",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_basic_007",
+    "prompt": "Write a Python function generate_report(report_type, start_date, end_date, filters, grouping, metrics, format, recipients, schedule, timezone, include_charts) that creates reports.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Recommend"
+    ],
+    "domain": "Healthcare",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_intermediate_001",
+    "prompt": "Write a Python function configure_server(hostname, port, ssl_enabled, ssl_cert, ssl_key, max_connections, timeout, buffer_size, log_level, log_path, cache_enabled, cache_size, cache_ttl, auth_required, auth_provider) that sets up server configuration.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Compare",
+      "Recommend"
+    ],
+    "domain": "Scientific Computing",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_intermediate_002",
+    "prompt": "Write a Python function process_transaction(transaction_id, account_from, account_to, amount, currency, exchange_rate, fee_type, fee_amount, description, category, tags, recurring, schedule, notify_sender, notify_recipient, compliance_check) that handles financial transactions.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Implement",
+      "Report"
+    ],
+    "domain": "General Software",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_intermediate_003",
+    "prompt": "Write a Python function create_clinical_study(study_name, protocol_id, sponsor, investigators, sites, start_date, end_date, enrollment_target, inclusion_criteria, exclusion_criteria, endpoints, randomization, blinding, data_management, monitoring_plan, regulatory_status) that initializes a clinical trial.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Design",
+      "List"
+    ],
+    "domain": "E-commerce",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_intermediate_004",
+    "prompt": "Write a Python function configure_analysis(data_source, variables, transformations, filters, aggregations, statistical_tests, confidence_level, corrections, output_format, visualizations, export_path, validation_rules, missing_data_handling, outlier_treatment) that sets up statistical analysis.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Design",
+      "Measure"
+    ],
+    "domain": "Finance",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_intermediate_005",
+    "prompt": "Write a Python function deploy_application(app_name, version, environment, region, instance_type, instance_count, auto_scaling, min_instances, max_instances, health_check_path, health_check_interval, load_balancer, ssl_termination, env_variables, secrets, rollback_enabled) that deploys applications.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Recommend",
+      "Analyze"
+    ],
+    "domain": "Healthcare",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_intermediate_006",
+    "prompt": "Write a Python function configure_server(hostname, port, ssl_enabled, ssl_cert, ssl_key, max_connections, timeout, buffer_size, log_level, log_path, cache_enabled, cache_size, cache_ttl, auth_required, auth_provider) that sets up server configuration.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Measure",
+      "Report"
+    ],
+    "domain": "Scientific Computing",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_intermediate_007",
+    "prompt": "Write a Python function process_transaction(transaction_id, account_from, account_to, amount, currency, exchange_rate, fee_type, fee_amount, description, category, tags, recurring, schedule, notify_sender, notify_recipient, compliance_check) that handles financial transactions.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Recommend",
+      "Measure"
+    ],
+    "domain": "General Software",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_advanced_001",
+    "prompt": "Write a Python function create_marketing_campaign(campaign_name, campaign_type, start_date, end_date, budget, daily_limit, target_audience, demographics, interests, behaviors, locations, devices, platforms, ad_formats, creatives, landing_pages, conversion_goals, tracking_pixels, attribution_model, optimization_goal, bid_strategy, frequency_cap, dayparting, exclusions, compliance_flags) that creates comprehensive ad campaigns.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "Recommend",
+      "Compare",
+      "Report"
+    ],
+    "domain": "E-commerce",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_advanced_002",
+    "prompt": "Write a Python function configure_data_pipeline(pipeline_name, source_type, source_config, destination_type, destination_config, schema_mapping, transformations, validations, error_handling, retry_policy, batch_size, parallelism, scheduling, monitoring_enabled, alert_thresholds, alert_recipients, logging_level, audit_enabled, encryption_enabled, compression, partitioning, deduplication) that sets up ETL workflows.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "Evaluate",
+      "List",
+      "Write"
+    ],
+    "domain": "Finance",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_advanced_003",
+    "prompt": "Write a Python function initialize_experiment(experiment_id, hypothesis, methodology, variables_independent, variables_dependent, variables_controlled, sample_size, power_analysis, randomization_method, blinding_type, data_collection_instruments, measurement_protocols, analysis_plan, stopping_rules, safety_monitoring, data_quality_checks, consent_process, ethics_approval, funding_source, collaboration_agreements, publication_plan) that initializes scientific experiments.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "List",
+      "Design",
+      "Measure"
+    ],
+    "domain": "Healthcare",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_advanced_004",
+    "prompt": "Write a Python function create_insurance_policy(policy_type, policyholder_info, coverage_limits, deductibles, premium_amount, payment_frequency, effective_date, expiration_date, beneficiaries, riders, exclusions, conditions, underwriting_class, risk_factors, territory, agency, agent, commission_rate, reinsurance_treaty, regulatory_filing, document_templates, delivery_method, renewal_terms, cancellation_terms) that creates insurance policies.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "Report",
+      "Recommend",
+      "Write"
+    ],
+    "domain": "Scientific Computing",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_advanced_005",
+    "prompt": "Write a Python function setup_trading_strategy(strategy_name, asset_class, instruments, data_feeds, timeframes, indicators, entry_conditions, exit_conditions, position_sizing, risk_per_trade, max_drawdown, correlation_limits, execution_algo, slippage_model, commission_model, margin_requirements, leverage_limits, hedging_rules, rebalancing_frequency, performance_metrics, backtesting_period, walk_forward_windows, optimization_method, paper_trading_period) that configures algorithmic trading.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "Implement",
+      "Measure",
+      "Write"
+    ],
+    "domain": "General Software",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_long_parameter_list_advanced_006",
+    "prompt": "Write a Python function create_marketing_campaign(campaign_name, campaign_type, start_date, end_date, budget, daily_limit, target_audience, demographics, interests, behaviors, locations, devices, platforms, ad_formats, creatives, landing_pages, conversion_goals, tracking_pixels, attribution_model, optimization_goal, bid_strategy, frequency_cap, dayparting, exclusions, compliance_flags) that creates comprehensive ad campaigns.",
+    "code_smells": [
+      "Long Parameter List"
+    ],
+    "complexity": "advanced",
+    "action_keywords": [
+      "Evaluate",
+      "Compare",
+      "Report"
+    ],
+    "domain": "E-commerce",
+    "prompt_type": "generation",
+    "expected_token_depth": "high",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_god_class_basic_001",
+    "prompt": "Write a UserManager class that handles user registration, authentication, profile management, password reset, email verification, session handling, and activity logging.",
+    "code_smells": [
+      "God Class / Large Class"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Implement"
+    ],
+    "domain": "Finance",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_god_class_basic_002",
+    "prompt": "Write an OrderProcessor class that manages order creation, validation, pricing, inventory updates, payment processing, shipping coordination, and notification sending.",
+    "code_smells": [
+      "God Class / Large Class"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Measure"
+    ],
+    "domain": "Healthcare",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_god_class_basic_003",
+    "prompt": "Write a ProductCatalog class that handles product creation, categorization, pricing, inventory tracking, search functionality, recommendation engine, and analytics.",
+    "code_smells": [
+      "God Class / Large Class"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "List"
+    ],
+    "domain": "Scientific Computing",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_god_class_basic_004",
+    "prompt": "Write a ReportGenerator class that creates financial reports, sales analytics, inventory summaries, customer insights, performance dashboards, and export functionality.",
+    "code_smells": [
+      "God Class / Large Class"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Analyze"
+    ],
+    "domain": "General Software",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_god_class_basic_005",
+    "prompt": "Write a NotificationService class that handles email sending, SMS messaging, push notifications, in-app alerts, scheduled reminders, and delivery tracking.",
+    "code_smells": [
+      "God Class / Large Class"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Measure"
+    ],
+    "domain": "E-commerce",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_god_class_basic_006",
+    "prompt": "Write a FileManager class that handles file uploads, storage, retrieval, versioning, sharing, permissions, compression, and cleanup scheduling.",
+    "code_smells": [
+      "God Class / Large Class"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "Analyze"
+    ],
+    "domain": "Finance",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_god_class_basic_007",
+    "prompt": "Write a CustomerService class that manages tickets, chat support, email responses, knowledge base, satisfaction surveys, and escalation workflows.",
+    "code_smells": [
+      "God Class / Large Class"
+    ],
+    "complexity": "basic",
+    "action_keywords": [
+      "List"
+    ],
+    "domain": "Healthcare",
+    "prompt_type": "generation",
+    "expected_token_depth": "low",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_god_class_intermediate_001",
+    "prompt": "Implement an ApplicationController class that manages database connections, HTTP routing, request validation, business logic execution, template rendering, caching, error handling, API responses, and logging.",
+    "code_smells": [
+      "God Class / Large Class"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Compare",
+      "Report"
+    ],
+    "domain": "Scientific Computing",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_god_class_intermediate_002",
+    "prompt": "Write a FinancialSystem class that handles accounts, transactions, reconciliation, reporting, tax calculations, audit trails, compliance checks, currency conversion, and statement generation.",
+    "code_smells": [
+      "God Class / Large Class"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Recommend",
+      "Measure"
+    ],
+    "domain": "General Software",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_god_class_intermediate_003",
+    "prompt": "Write a HospitalManagement class that manages patients, appointments, medical records, billing, pharmacy, laboratory, staff scheduling, bed allocation, and emergency protocols.",
+    "code_smells": [
+      "God Class / Large Class"
+    ],
+    "complexity": "intermediate",
+    "action_keywords": [
+      "Design",
+      "List"
+    ],
+    "domain": "E-commerce",
+    "prompt_type": "generation",
+    "expected_token_depth": "medium",
+    "synthetic": true
+  }
+]

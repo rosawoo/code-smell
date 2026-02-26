@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "created": "2026-02-26T10:13:57.645767",
+  "methodology": "Based on arXiv:2503.10666",
+  "total_prompts": 476,
+  "code_smell_categories": [
+    "long_method",
+    "long_parameter_list",
+    "god_class",
+    "feature_envy",
+    "data_clumps",
+    "duplicated_code",
+    "dead_code",
+    "speculative_generality",
+    "primitive_obsession",
+    "switch_statements",
+    "parallel_inheritance",
+    "lazy_class",
+    "temporary_field",
+    "message_chains",
+    "middle_man",
+    "inappropriate_intimacy",
+    "alternative_classes_different_interfaces",
+    "incomplete_library_class",
+    "data_class",
+    "refused_bequest",
+    "comments_smell",
+    "magic_numbers",
+    "deep_nesting",
+    "global_state",
+    "shotgun_surgery"
+  ],
+  "complexity_levels": [
+    "basic",
+    "intermediate",
+    "advanced"
+  ],
+  "domains": [
+    "E-commerce",
+    "Finance",
+    "Healthcare",
+    "Scientific Computing",
+    "General Software"
+  ],
+  "action_keywords": [
+    "Analyze",
+    "Recommend",
+    "Write",
+    "Measure",
+    "Report",
+    "List",
+    "Compare",
+    "Evaluate",
+    "Implement",
+    "Design"
+  ],
+  "prompt_types": [
+    "generation"
+  ],
+  "statistics": {
+    "by_complexity": {
+      "basic": 173,
+      "intermediate": 157,
+      "advanced": 146
+    },
+    "by_domain": {
+      "E-commerce": 108,
+      "Finance": 96,
+      "Healthcare": 96,
+      "Scientific Computing": 89,
+      "General Software": 87
+    },
+    "by_smell": {
+      "Long Method": 40,
+      "Long Parameter List": 40,
+      "God Class / Large Class": 30,
+      "Feature Envy": 18,
+      "Data Clumps": 18,
+      "Duplicated Code": 20,
+      "Dead Code": 16,
+      "Speculative Generality": 16,
+      "Primitive Obsession": 18,
+      "Switch Statements": 18,
+      "Parallel Inheritance Hierarchies": 16,
+      "Lazy Class": 16,
+      "Temporary Field": 16,
+      "Message Chains": 16,
+      "Middle Man": 16,
+      "Inappropriate Intimacy": 18,
+      "Alternative Classes with Different Interfaces": 16,
+      "Incomplete Library Class": 14,
+      "Data Class": 16,
+      "Refused Bequest": 16,
+      "Comments (as smell indicator)": 14,
+      "Magic Numbers/Strings": 18,
+      "Deep Nesting": 18,
+      "Global State": 16,
+      "Shotgun Surgery": 16
+    },
+    "synthetic_count": 50,
+    "core_count": 426
+  }
+}
