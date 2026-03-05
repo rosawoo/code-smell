@@ -57,9 +57,24 @@ code-smell/
 │   ├── prompts_synthetic.json     # 50 synthetic expansions
 │   ├── prompts_synthetic.csv      # CSV version
 │   └── metadata.json              # Statistics and mappings
+├── detector/
+│   └── smell_detector.py          # Heuristic code smell detector
+├── pipeline/
+│   ├── model_registry.py          # 14 model configs + inference settings
+│   ├── run_inference.py           # Generate code from all models
+│   ├── run_detection.py           # Detect smells in generated code
+│   └── run_all.sh                 # Full pipeline script
+├── outputs/                       # Model outputs + detection results
+│   └── <model-id>/
+│       ├── metadata.json          # Model + run metadata
+│       ├── results.jsonl          # Raw inference results
+│       ├── code/                  # Generated .py files
+│       ├── detections.jsonl       # Smell detection results
+│       └── detection_summary.json # Per-model summary
 ├── examples/
 │   └── Sample Prompts.rtf         # Example prompts
 ├── generate_dataset.py            # Dataset generator script
+├── requirements.txt               # Python dependencies
 └── README.md
 ```
 
@@ -107,6 +122,51 @@ python generate_dataset.py
 ```
 
 The generator uses a fixed random seed (42) for reproducibility.
+
+### Running the Inference Pipeline
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run all 14 models (requires GPU)
+bash pipeline/run_all.sh
+
+# Run a single model
+python -m pipeline.run_inference --model qwen2.5-coder-7b
+
+# Run with 4-bit quantization (lower VRAM)
+python -m pipeline.run_inference --model qwen2.5-coder-7b --quantize 4bit
+
+# Resume an interrupted run
+python -m pipeline.run_inference --model qwen2.5-coder-7b --resume
+
+# List available models
+python -m pipeline.run_inference --list-models
+```
+
+### Running Code Smell Detection
+
+```bash
+# Detect smells across all model outputs
+python -m pipeline.run_detection
+
+# Detect for a specific model
+python -m pipeline.run_detection --model qwen2.5-coder-7b
+```
+
+### Models (14 code-specific instruction-tuned models)
+
+| Model | Params | Architecture |
+|-------|--------|-------------|
+| Qwen2.5-Coder-{1.5B,3B,7B}-Instruct | 1.5-7.6B | Qwen2 Transformer |
+| deepseek-coder-{1.3b,6.7b}-instruct | 1.3-6.7B | LLaMA-style |
+| DeepSeek-Coder-V2-Lite-Instruct | 2.4B active | DeepSeekMoE |
+| CodeLlama-7b-Instruct-hf | 7B | LLaMA 2 |
+| Mamba-Codestral-7B-v0.1 | 7B | Mamba2 SSM |
+| starcoder2-{3b,7b}-instruct | 3-7B | StarCoder2 |
+| Yi-Coder-{1.5B,9B}-Chat | 1.5-9B | Yi Transformer |
+| granite-{3b,8b}-code-instruct-128k | 3-8B | LLaMA-based |
 
 ## Action Keywords
 
